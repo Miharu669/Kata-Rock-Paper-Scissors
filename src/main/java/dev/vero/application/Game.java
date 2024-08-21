@@ -1,7 +1,6 @@
 package dev.vero.application;
 
-public abstract class Game {
-    public abstract boolean beats(Game other);
-
-    public abstract String getName();
+public interface Game {
+    boolean beats(Game other);
+    String getName();
 }
