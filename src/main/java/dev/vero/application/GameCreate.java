@@ -11,6 +11,10 @@ public class GameCreate {
                 return new Paper();
             case 2:
                 return new Scissors();
+            case 3: 
+                return new Lizard();
+            case 4:
+                return new Spock();
             default:
                 return null;
         }
