@@ -14,7 +14,12 @@ public class PaperTest {
         Game rock = new Rock();
         assertTrue(paper.beats(rock), "Paper should beat Rock");
     }
-
+    @Test
+    void testPaperBeatsSpock() {
+        Game paper = new Paper();
+        Game spock = new Spock();
+        assertTrue(paper.beats(spock), "Paper should beat Spock");
+    }
     @Test
     void testPaperDoesNotBeatPaper() {
         Game paper1 = new Paper();
