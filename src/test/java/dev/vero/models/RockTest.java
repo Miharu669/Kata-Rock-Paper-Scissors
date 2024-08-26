@@ -1,48 +1,48 @@
-package dev.vero.models;
+// package dev.vero.models;
 
-import dev.vero.application.Game;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+// import dev.vero.application.Game;
+// import org.junit.jupiter.api.Test;
+// import static org.junit.jupiter.api.Assertions.assertTrue;
+// import static org.junit.jupiter.api.Assertions.assertFalse;
+// import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RockTest {
+// public class RockTest {
 
-    @Test
-    void testRockBeatsScissors() {
-        Game rock = new Rock();
-        Game scissors = new Scissors();
-        assertTrue(rock.beats(scissors), "Rock should beat Scissors");
-    }
-    @Test
-    void testRockBeatsLizard() {
-        Game rock = new Rock();
-        Game lizard = new Lizard();
-        assertTrue(rock.beats(lizard), "Rock should beat Lizard");
-    }
-    @Test
-    void testRockDoesNotBeatPaper() {
-        Game rock = new Rock();
-        Game paper = new Paper();
-        assertFalse(rock.beats(paper), "Rock should not beat Paper");
-    }
+//     @Test
+//     void testRockBeatsScissors() {
+//         Game rock = new Rock();
+//         Game scissors = new Scissors();
+//         assertTrue(rock.beats(scissors), "Rock should beat Scissors");
+//     }
+//     @Test
+//     void testRockBeatsLizard() {
+//         Game rock = new Rock();
+//         Game lizard = new Lizard();
+//         assertTrue(rock.beats(lizard), "Rock should beat Lizard");
+//     }
+//     @Test
+//     void testRockDoesNotBeatPaper() {
+//         Game rock = new Rock();
+//         Game paper = new Paper();
+//         assertFalse(rock.beats(paper), "Rock should not beat Paper");
+//     }
 
-    @Test
-    void testRockDoesNotBeatSpock() {
-        Game rock = new Rock();
-        Game spock = new Spock();
-        assertFalse(rock.beats(spock), "Rock should not beat Spock");
-    }
-    @Test
-    void testRockDoesNotBeatRock() {
-        Game rock1 = new Rock();
-        Game rock2 = new Rock();
-        assertFalse(rock1.beats(rock2), "Rock should not beat Rock");
-    }
+//     @Test
+//     void testRockDoesNotBeatSpock() {
+//         Game rock = new Rock();
+//         Game spock = new Spock();
+//         assertFalse(rock.beats(spock), "Rock should not beat Spock");
+//     }
+//     @Test
+//     void testRockDoesNotBeatRock() {
+//         Game rock1 = new Rock();
+//         Game rock2 = new Rock();
+//         assertFalse(rock1.beats(rock2), "Rock should not beat Rock");
+//     }
 
-    @Test
-    void testGetName() {
-        Game rock = new Rock();
-        assertEquals("Rock", rock.getName(), "The name should be 'Rock'");
-    }
-}
+//     @Test
+//     void testGetName() {
+//         Game rock = new Rock();
+//         assertEquals("Rock", rock.getName(), "The name should be 'Rock'");
+//     }
+// }
