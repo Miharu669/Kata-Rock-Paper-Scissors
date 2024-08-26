@@ -7,9 +7,9 @@ public enum SelectableEnum {
     Lizard(new LizardFactory().create()),
     Paper(new PaperFactory().create()),
     Rock(new RockFactory().create()),
-    Scissors(new ScissorsFactory().create())
-    ;
-
+    Scissors(new ScissorsFactory().create()),
+    Spock(new SpockFactory().create());
+    
     private ISelectable selectable;
 
     private SelectableEnum(ISelectable selectable) {
