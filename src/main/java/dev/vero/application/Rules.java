@@ -24,7 +24,10 @@ public class Rules {
                 || (playerType.equals("Lizard") && computerType.equals("Spock"))) {
             return "Lizard poisons Spock.";
         }
-
+        if ((playerType.equals("Scissors") && computerType.equals("Spock"))
+                || (playerType.equals("Spock") && computerType.equals("Scissors"))) {
+            return "Spock smashes Scissors.";
+        }
         if ((playerType.equals("Scissors") && computerType.equals("Lizard"))
                 || (playerType.equals("Lizard") && computerType.equals("Scissors"))) {
             return "Scissors decapitates Lizard.";
@@ -33,7 +36,14 @@ public class Rules {
                 || (playerType.equals("Lizard") && computerType.equals("Paper"))) {
             return "Lizard eats Paper.";
         }
-
+        if ((playerType.equals("Spock") && computerType.equals("Paper"))
+                || (playerType.equals("Paper") && computerType.equals("Spock"))) {
+            return "Paper disproves Spock.";
+        }
+        if ((playerType.equals("Rock") && computerType.equals("Spock"))
+                || (playerType.equals("Spock") && computerType.equals("Rock"))) {
+            return "Spock vaporizes Rock.";
+        }
         if ((playerType.equals("Rock") && computerType.equals("Scissors"))
                 || (playerType.equals("Scissors") && computerType.equals("Rock"))) {
             return "Rock crushes Scissors.";
