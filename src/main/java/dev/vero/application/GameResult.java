@@ -5,7 +5,7 @@ import dev.vero.models.*;
 public class GameResult {
     public String winner(Game player, Game computer) {
         if (player.getClass() == computer.getClass()) {
-            return "It's a tie!";
+            return "It's a draw!";
         } else if (player.beats(computer)) {
             return getVictoryMessage(player, computer, true);
         } else {
