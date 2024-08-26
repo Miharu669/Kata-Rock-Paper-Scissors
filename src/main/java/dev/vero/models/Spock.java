@@ -1,15 +1,11 @@
 package dev.vero.models;
 
-import dev.vero.application.*;
+import dev.vero.contracts.ISelectable;
 
-public class Spock implements Game {
-    @Override
-    public boolean beats(Game other) {
-        return other instanceof Scissors || other instanceof Rock;
-    }
+public class Spock extends Selectable implements ISelectable{
 
-    @Override
-    public String getName() {
-        return "Spock";
+    public Spock() {
+    this.type = "Spock";
     }
+    
 }
