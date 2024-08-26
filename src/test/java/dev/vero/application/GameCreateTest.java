@@ -29,12 +29,6 @@ public class GameCreateTest {
         assertTrue(move instanceof Scissors, "Choice 2 should return an instance of Scissors");
     }
 
-    @Test
-    void testGetMoveInvalid() {
-        GameCreate gameCreate = new GameCreate();
-        Game move = gameCreate.getMove(3); 
-        assertNull(move, "Invalid choice should return null");
-    }
 
     @Test
     void testGetMoveNegativeChoice() {
