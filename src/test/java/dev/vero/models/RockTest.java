@@ -14,7 +14,12 @@ public class RockTest {
         Game scissors = new Scissors();
         assertTrue(rock.beats(scissors), "Rock should beat Scissors");
     }
-
+    @Test
+    void testRockBeatsLizard() {
+        Game rock = new Rock();
+        Game lizard = new Lizard();
+        assertTrue(rock.beats(lizard), "Rock should beat Lizard");
+    }
     @Test
     void testRockDoesNotBeatPaper() {
         Game rock = new Rock();
@@ -22,6 +27,12 @@ public class RockTest {
         assertFalse(rock.beats(paper), "Rock should not beat Paper");
     }
 
+    @Test
+    void testRockDoesNotBeatSpock() {
+        Game rock = new Rock();
+        Game spock = new Spock();
+        assertFalse(rock.beats(spock), "Rock should not beat Spock");
+    }
     @Test
     void testRockDoesNotBeatRock() {
         Game rock1 = new Rock();
