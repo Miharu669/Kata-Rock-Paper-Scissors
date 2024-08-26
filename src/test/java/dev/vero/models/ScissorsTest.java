@@ -16,10 +16,24 @@ public class ScissorsTest {
     }
 
     @Test
+    void testScissorsBeatsLizard() {
+        Game scissors = new Scissors();
+        Game lizard = new Lizard();
+        assertTrue(scissors.beats(lizard), "Scissors should beat Lizard");
+    }
+
+    @Test
     void testScissorsDoesNotBeatRock() {
         Game scissors = new Scissors();
         Game rock = new Rock();
         assertFalse(scissors.beats(rock), "Scissors should not beat Rock");
+    }
+
+    @Test
+    void testScissorsDoesNotBeatSpock() {
+        Game scissors = new Scissors();
+        Game spock = new Spock();
+        assertFalse(scissors.beats(spock), "Scissors should not beat Spock");
     }
 
     @Test
