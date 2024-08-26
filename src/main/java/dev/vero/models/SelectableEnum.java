@@ -5,6 +5,7 @@ import dev.vero.models.factories.*;
 
 public enum SelectableEnum {
     Lizard(new LizardFactory().create()),
+    Paper(new PaperFactory().create()),
     ;
 
     private ISelectable selectable;
